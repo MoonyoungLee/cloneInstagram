@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--Google Icons-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Symbols+Outlined|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        border-radius: 70%;
+        overflow: hidden;
+      }
+
+      .profile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .feed_box {
+        margin: 20px 0;
+        border: solid 1px gray;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!--상단 내비게이션 바-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="position: fixed; width: 100%; height: 50px"
+    >
+      <div
+        class="container-fluid"
+        style="justify-content: space-between; felx-wrap: nowrap"
+      >
+        <a class="navbar-brand" href="main">
+          <img
+            style="width: 100px"
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
+          />
+        </a>
+        <input
+          class="form-control me-2"
+          style="width: 400px"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <div style="display: flex">
+          <span class="material-icons">home</span>
+          <span class="material-symbols-outlined">send</span>
+          <span class="material-symbols-outlined"> add_box </span>
+          <span class="material-symbols-outlined"> explore </span>
+          <span class="material-symbols-outlined"> favorite </span>
+        </div>
+      </div>
+    </nav>
+
+    <!--바디 영역-->
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        padding-top: 60px;
+      "
+    >
+      <!--왼쪽 화면-->
+      <div style="width: 600px; height: 1000px; margin-right: 256px">
+        <div
+          style="
+            border: solid 1px #dadada;
+            background-color: white;
+            margin-top: 10px;
+          "
+        >
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <div class="box" style="width: 40px; height: 40px">
+              <img
+                class="profile"
+                src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+              />
+            </div>
+            <div style="margin: 0 4px; font-size: 14px"><b>jin.99</b></div>
+          </div>
+          <!--image-->
+          <div>
+            <img
+              style="width: 100%"
+              src="https://api.cdn.visitjeju.net/photomng/imgpath/201911/29/2032c09c-a4cc-445a-80e2-8b3dd11e4b56.jpg"
+            />
+          </div>
+          <!--feed icons-->
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <span class="material-symbols-outlined"> favorite </span>
+              <span class="material-symbols-outlined"> mode_comment </span>
+              <span class="material-symbols-outlined"> send </span>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> bookmark </span>
+            </div>
+          </div>
+
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            춘식이 님 <b>외 19명</b>이 좋아합니다.
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 15px">
+            <b>jin.99</b> 해외여행 대신 훌쩍 떠나온 제주
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>aykim0908</b> 나도 제주도 가고 싶다.
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>ha_yul</b> 좋겠다! 며칠 있다가 와?
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>jane03</b> 우왕 여기 어디야? 뷰 엄청 좋다!
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="댓글달기.."
+              style="
+                box-shadhow: none;
+                border: none;
+                outline: none;
+                height: 35px;
+              "
+            />
+          </div>
+        </div>
+
+        <div
+          style="
+            border: solid 1px #dadada;
+            background-color: white;
+            margin-top: 10px;
+          "
+        >
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <div class="box" style="width: 40px; height: 40px">
+              <img
+                class="profile"
+                src="https://t1.daumcdn.net/cfile/tistory/27454A3654FC08C50D"
+              />
+            </div>
+            <div style="margin: 0 4px; font-size: 14px"><b>suhyun89</b></div>
+          </div>
+          <!--image-->
+          <div>
+            <img
+              style="width: 100%"
+              src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/477000/477580-Osaka.jpg"
+            />
+          </div>
+          <!--feed icons-->
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <span class="material-symbols-outlined"> favorite </span>
+              <span class="material-symbols-outlined"> mode_comment </span>
+              <span class="material-symbols-outlined"> send </span>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> bookmark </span>
+            </div>
+          </div>
+
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            앙꼬 님 <b>외 27명</b>이 좋아합니다.
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 15px">
+            <b>suhyun89</b> 나도 왔다 오사카!
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>pink789</b> 오! 선물사와! ㅋㅋㅋ
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>black1122</b> 우리도 저기 갔었는데 ㅎㅎ 재밌게 놀다와~
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="댓글달기.."
+              style="
+                box-shadhow: none;
+                border: none;
+                outline: none;
+                height: 35px;
+              "
+            />
+          </div>
+        </div>
+
+        <div
+          style="
+            border: solid 1px #dadada;
+            background-color: white;
+            margin-top: 10px;
+          "
+        >
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <div class="box" style="width: 40px; height: 40px">
+              <img
+                class="profile"
+                src="https://post-phinf.pstatic.net/MjAxNzA2MjhfMjM4/MDAxNDk4NjU2MzgyNzkz.483tLYhwuZWJkjlaoylJOmugikPrngLkrdD11Rw0m-Ag.9EuU6nAsgO_P8f1ZvfOlD3-5yazjQ5bEOeO55leuV20g.PNG/10.PNG?type=w800_q75"
+              />
+            </div>
+            <div style="margin: 0 4px; font-size: 14px"><b>hy_days</b></div>
+          </div>
+          <!--image-->
+          <div>
+            <img
+              style="width: 100%"
+              src="https://www.newsrep.co.kr/news/photo/201706/36883_32940_4547.png"
+            />
+          </div>
+          <!--feed icons-->
+          <div
+            style="
+              margin: 0 2px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <span class="material-symbols-outlined"> favorite </span>
+              <span class="material-symbols-outlined"> mode_comment </span>
+              <span class="material-symbols-outlined"> send </span>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> bookmark </span>
+            </div>
+          </div>
+
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            말랑이 님 <b>외 19명</b>이 좋아합니다.
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 15px">
+            <b>hy_days</b> 오랜만에 오빠랑 데이트!
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>soo.young</b> 여기 사람들 요즘 자주 가던데 괜춘해?
+          </div>
+          <div style="margin: 0 2px; display: flex; font-size: 13px">
+            <b>jieunlee</b> ㅋㅋㅋ 오빠랑 점심 데이트했오?
+          </div>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="댓글달기.."
+              style="
+                box-shadhow: none;
+                border: none;
+                outline: none;
+                height: 35px;
+              "
+            />
+          </div>
+        </div>
+      </div>
+      <!--오른쪽 화면-->
+      <div style="width: 400px; height: 1000px; position: fixed; left: 62%">
+        <div
+          style="
+            margin: 0 2px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          "
+        >
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">hyejin kim</div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div style="font-weight: bold; color: gray; font-size: 12px">
+            회원님을 위한 추천
+          </div>
+          <div>
+            <a
+              href="#"
+              style="
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 12px;
+              "
+              >모두보기</a
+            >
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">
+              nami님 외 31명이 팔로우합니다.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">
+              nami님 외 31명이 팔로우합니다.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">
+              nami님 외 31명이 팔로우합니다.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">
+              nami님 외 31명이 팔로우합니다.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <div class="box" style="width: 60px; height: 60px">
+            <img
+              class="profile"
+              src="http://file3.instiz.net/data/file3/2021/05/31/3/e/5/3e53b0b1d44022514120cd75182aeecd.png"
+            />
+          </div>
+          <div
+            style="
+              margin-left: 10px;
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 12px"><b>jin.99</b></div>
+            <div style="color: gray; font-size: 12px">
+              nami님 외 31명이 팔로우합니다.
+            </div>
+          </div>
+        </div>
+        <div>소개 도움말 홍보센터 API 채용정보</div>
+        <div>2021 INSTAGRAM FROM FACEBOOK</div>
+      </div>
+    </div>
+  </body>
+</html>
