@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'instagram',
-    'content',
-    'user'
+    'content'
 ]
 
 MIDDLEWARE = [
